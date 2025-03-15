@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Ubuntu_Sans_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { Sidebar } from "@/components"
 import "./globals.css";
 
-const fontSans = Ubuntu_Sans_Mono({
+const fontSans = Montserrat({
   variable: "--font-sans",
-  subsets: ["latin"],
+  subsets: ["latin"]
 });
 
 export const metadata: Metadata = {
