@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react"
 import {
   mainContainer,
   mainTitle,
   title,
   subTitle
-} from './sidebarStyles'
+} from "./sidebarStyles"
 
 export const Sidebar = () => {
   return (
-    <div className={mainContainer}>
+    <div className={`${mainContainer}`}>
       <h4 className={mainTitle}>Контакты</h4>
 
       <p className={title}>Телефон:</p>
@@ -25,7 +25,7 @@ export const Sidebar = () => {
       </p>
       
       <p className={title}>Адрес:</p>
-      <p>
+      <p className={subTitle}>
         Ростовская область
         Каменский район
         хутор Поповка

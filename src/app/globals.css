@@ -26,3 +26,7 @@ a {
   color: theme('colors.blue.600');
   text-decoration: underline;
 }
+
+p, div {
+  color: theme('colors.gray.800');
+}
