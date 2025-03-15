@@ -19,17 +19,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
+    <html lang="ru" className="h-full">
       <body
-        className={`${fontSans.variable} antialiased max-w-[1420px] mx-auto px-3`}
+        className={`flex flex-col h-full ${fontSans.variable} antialiased max-w-[1420px] mx-auto px-3`}
       >
         <Header />
-        <div className="flex" >
-          <div className="flex-1/4">
+        <div className="flex h-full" >
+          <div className="flex flex-11/12">
             {children}
           </div>
-            
-          <Sidebar />
+          <div className="flex-2/12">
+            <Sidebar />
+          </div>
         </div>
       </body>
     </html>
