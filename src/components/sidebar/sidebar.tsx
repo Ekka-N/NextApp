@@ -8,7 +8,7 @@ import {
 
 export const Sidebar = () => {
   return (
-    <div className={`${mainContainer}`}>
+    <div className={`${mainContainer} shadow-inner`}>
       <h4 className={mainTitle}>Контакты</h4>
 
       <p className={title}>Телефон:</p>

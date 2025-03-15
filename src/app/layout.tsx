@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body
-        className={`${fontSans.variable} antialiased max-w-[1420px] mx-auto`}
+        className={`${fontSans.variable} antialiased max-w-[1420px] mx-auto px-3`}
       >
         <Header />
         <div className="flex" >

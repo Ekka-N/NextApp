@@ -1,10 +1,20 @@
-import React from 'react';
-import { flexRowWrap, headerContainer, mainTitle, nav } from './headerStyles';
+'use client'
+
+import React, { useState } from 'react';
+import { flexRowWrap, headerContainer, mainTitle, nav, selectedNav } from './headerStyles';
+
+enum Nav {
+  MAIN,
+  RECS,
+  CATALOG
+}
 
 export const Header = () => {
+  const [navState, setNavState] = useState<Nav>(Nav.MAIN)  
+
   return (
     <header className={headerContainer}>
-      <div className={`${flexRowWrap} mb-7`}>
+      <div className={`${flexRowWrap} mb-4`}>
         <h1 className={mainTitle}>
           Саженцы из Поповки
         </h1>
@@ -12,13 +22,13 @@ export const Header = () => {
       </div>
 
       <div className={`${flexRowWrap}`}>
-        <nav className={`${nav}`}>
+        <nav className={navState === Nav.MAIN ? selectedNav : nav}>
           Главная
         </nav>
-        <nav className={`${nav}`}>
+        <nav className={navState === Nav.RECS ? selectedNav : nav}>
           Рекомендации по посадке и уходу
         </nav>
-        <nav className={`${nav}`}>
+        <nav className={navState === Nav.CATALOG ? selectedNav : nav}>
           Каталог сортов
         </nav>
       </div>
