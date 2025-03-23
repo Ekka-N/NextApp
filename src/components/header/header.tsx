@@ -33,16 +33,16 @@ export const Header = () => {
           Главная
         </nav>
         <nav
-          className={navState === Nav.RECS ? selectedNav : nav}
-          onClick={() => handleChangeNav(Nav.RECS)}
-        >
-          Рекомендации по посадке и уходу
-        </nav>
-        <nav
           className={navState === Nav.CATALOG ? selectedNav : nav}
           onClick={() => handleChangeNav(Nav.CATALOG)}
         >
           Каталог сортов
+        </nav>
+        <nav
+          className={navState === Nav.RECS ? selectedNav : nav}
+          onClick={() => handleChangeNav(Nav.RECS)}
+        >
+          Рекомендации по посадке и уходу
         </nav>
       </div>
     </header>
