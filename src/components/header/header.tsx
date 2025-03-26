@@ -1,7 +1,9 @@
 'use client'
 
-import React, { useState } from 'react';
-import { flexRowWrap, headerContainer, mainTitle, nav, selectedNav } from './headerStyles';
+import React, { useState } from 'react'
+import { flexRowWrap, headerContainer, mainTitle, nav, selectedNav } from './headerStyles'
+import Link from 'next/link'
+import './header.css'
 
 enum Nav {
   MAIN,
@@ -26,24 +28,27 @@ export const Header = () => {
       </div>
 
       <div className={`${flexRowWrap}`}>
-        <nav
+        <Link
           className={navState === Nav.MAIN ? selectedNav : nav}
           onClick={() => handleChangeNav(Nav.MAIN)}
+          href='/'
         >
-          Главная
-        </nav>
-        <nav
+          О нас
+        </Link>
+        <Link
           className={navState === Nav.CATALOG ? selectedNav : nav}
           onClick={() => handleChangeNav(Nav.CATALOG)}
+          href='/catalog'
         >
           Каталог сортов
-        </nav>
-        <nav
+        </Link>
+        <Link
           className={navState === Nav.RECS ? selectedNav : nav}
           onClick={() => handleChangeNav(Nav.RECS)}
+          href='/recommends'
         >
           Рекомендации по посадке и уходу
-        </nav>
+        </Link>
       </div>
     </header>
   );

@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className="h-full">
       <body
-        className={`flex flex-col h-full ${fontSans.variable} antialiased max-w-[1420px] mx-auto px-3`}
+        className={`flex flex-col h-full ${fontSans.variable} antialiased max-w-[1420px] mx-auto px-3 sm:flex-col`}
       >
         <Header />
         <div className="flex h-full" >

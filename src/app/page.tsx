@@ -1,12 +1,15 @@
-import Image from "next/image";
+import React from 'react'
 
-export default function Home() {
+const MainPage = () => {
   return (
     <div className="">
       <main className="">
+        MainPage
       </main>
       <footer className="">
       </footer>
     </div>
-  );
+  )
 }
+
+export default MainPage;
