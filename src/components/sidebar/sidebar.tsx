@@ -1,31 +1,27 @@
 import React from "react"
-import {
-  mainContainer,
-  mainTitle,
-  title,
-  subTitle
-} from "./sidebarStyles"
 
 export const Sidebar = () => {
   return (
-    <div className={`${mainContainer}`}>
-      <h4 className={mainTitle}>Контакты</h4>
+    <div className='bg-green-100 w-56  h-full py-7 px-5 rounded-3xl shadow-inner min-h-fit'>
+      <h4 className='font-semibold text-2xl pb-4'>
+        Контакты
+        </h4>
 
-      <p className={title}>Телефон:</p>
-      <p className={subTitle}>+7 000-000-00-00</p>
+      <p className='font-semibold text-lg pb-1'>Телефон:</p>
+      <p className='pb-3'>+7 000-000-00-00</p>
       
-      <p className={title}>WhatsApp:</p>
-      <p className={subTitle}>+7 000-000-00-00</p>
+      <p className='font-semibold text-lg pb-1'>WhatsApp:</p>
+      <p className='pb-3'>+7 000-000-00-00</p>
 
-      <p className={title}>Email:</p>
-      <p className={subTitle}>
+      <p className='font-semibold text-lg pb-1'>Email:</p>
+      <p className='pb-3'>
         <a href='mailto:san-nikishin@yandex.ru'>
           san-nikishin@yandex.ru
         </a>
       </p>
       
-      <p className={title}>Адрес:</p>
-      <p className={subTitle}>
+      <p className='font-semibold text-lg pb-1'>Адрес:</p>
+      <p className='pb-3'>
         Ростовская область
         Каменский район
         хутор Поповка
