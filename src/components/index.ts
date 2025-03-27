@@ -1,2 +1,3 @@
-export * from './sidebar/sidebar'
-export * from './header/header'
+export * from './sidebar'
+export * from './header'
+export * from './map' 

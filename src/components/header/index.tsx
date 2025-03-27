@@ -26,7 +26,7 @@ const NavLink = (props: NavLinkProps ) => {
         : 'notDecoratedLink not-even:cursor-pointer px-2 py-2 rounded-xl shadow-md hover:border-b-3 hover:border-b-gray-200 hover:-translate-y-1 hover:scale-105'
       }
       onClick={props.action}
-      href='/'
+      href={props.href}
     >
       {props.children}
     </Link>
