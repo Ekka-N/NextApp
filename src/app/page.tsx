@@ -1,10 +1,11 @@
+import { YandexMap } from '@/components';
 import React from 'react'
 
 const MainPage = () => {
   return (
     <div className="">
       <main className="">
-        MainPage
+        <YandexMap />
       </main>
       <footer className="">
       </footer>
