@@ -11,9 +11,14 @@ export const YandexMap = () => {
             center: [48.300413, 40.149768],
             zoom: 15
           }}
-          className="w-2xl h-64"
+          className="w-2xl h-64 shadow-md"
         >
-            <Placemark geometry={[48.300110, 40.149640]} />
+            <Placemark
+              geometry={[48.300110, 40.149640]}
+              properties={{
+                iconCaption: 'ул. Придорожная дом 8'
+              }} 
+            />
           </Map>
       </div>
     </YMaps>

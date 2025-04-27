@@ -21,17 +21,19 @@ export default function RootLayout({
   return (
     <html lang="ru" className="h-full">
       <body
-        className={`flex flex-col h-full ${fontSans.variable} antialiased max-w-[1420px] mx-auto px-3 sm:flex-col`}
+        className={`flex flex-col ${fontSans.variable} antialiased max-w-[1420px] mx-auto px-3 sm:flex-col`}
       >
         <Header />
         <div className="flex h-full" >
           <div className="flex flex-11/12">
             {children}
           </div>
-          <div className="flex-2/12">
+          <div className="flex-2/12 h-[70vh]">
             <Sidebar />
           </div>
         </div>
+        <footer className="">
+        </footer>
       </body>
     </html>
   );
