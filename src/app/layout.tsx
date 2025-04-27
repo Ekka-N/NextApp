@@ -24,11 +24,11 @@ export default function RootLayout({
         className={`flex flex-col ${fontSans.variable} antialiased max-w-[1420px] mx-auto px-3 sm:flex-col`}
       >
         <Header />
-        <div className="flex h-full" >
+        <div className="flex h-full gap-10" >
           <div className="flex flex-11/12">
             {children}
           </div>
-          <div className="flex-2/12 h-[70vh]">
+          <div className="hidden flex-2/12 h-[70vh] lg:block">
             <Sidebar />
           </div>
         </div>

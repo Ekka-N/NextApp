@@ -22,13 +22,20 @@ const NavLink = (props: NavLinkProps ) => {
     <Link
       className={
         props.isSelected ?
-          'notDecoratedLink bg-green-50 px-2 py-2 rounded-xl border-b-3 border-b-gray-200 shadow-inner'
-        : 'notDecoratedLink not-even:cursor-pointer px-2 py-2 rounded-xl shadow-md hover:border-b-3 hover:border-b-gray-200 hover:-translate-y-1 hover:scale-105'
+          'notDecoratedLink py-2 rounded-xl border-b-gray-200 sm:shadow-inner sm:bg-green-50 sm:px-2 sm:border-b-3'
+        : `notDecoratedLink not-even:cursor-pointer py-2 rounded-xl sm:hover:border-b-3 sm:hover:border-b-gray-200 sm:hover:-translate-y-1 sm:hover:scale-105
+          sm:px-2 sm:shadow-md`
       }
       onClick={props.action}
       href={props.href}
     >
-      {props.children}
+      <span className={
+        props.isSelected ?
+          'text-emerald-800 font-semibold underline sm:no-underline'
+        : `text-gray-800`
+      }>
+        {props.children}
+      </span>
     </Link>
   )
 }
@@ -49,13 +56,13 @@ export const Header = () => {
         <img alt="apple" src="img/apple.png" />
       </div>
 
-      <div className='flex items-center gap-6'>
+      <div className='flex items-center gap-4'>
         <NavLink
           isSelected={navState === Nav.MAIN }
           action={() => handleChangeNav(Nav.MAIN)}
           href='/'
         >
-          О нас
+          О нас
         </NavLink>
         <NavLink
           isSelected={navState === Nav.CATALOG}
@@ -69,7 +76,7 @@ export const Header = () => {
           action={() => handleChangeNav(Nav.RECS)}
           href='/recommends'
         >
-          Рекомендации по посадке и уходу
+          Посадка и уход
         </NavLink>
       </div>
     </header>
