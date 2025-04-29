@@ -2,7 +2,6 @@
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps"
 
 export const YandexMap = () => {
-
   return (
     <YMaps query={{ lang:'ru_RU' }}>
       <div>
