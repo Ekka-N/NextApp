@@ -5,7 +5,7 @@
 }
 
 :root {
-  --background: #ffffff;
+  --background: theme(--color-neutral-100);
   --foreground: #171717;
 }
 

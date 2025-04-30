@@ -23,8 +23,8 @@ const NavLink = (props: NavLinkProps ) => {
       className={
         props.isSelected ?
           'notDecoratedLink py-2 rounded-xl border-b-gray-200 sm:shadow-inner sm:bg-green-50 sm:px-2 sm:border-b-3'
-        : `notDecoratedLink not-even:cursor-pointer py-2 rounded-xl sm:hover:border-b-3 sm:hover:border-b-gray-200
-          sm:px-2 sm:shadow-md`
+        : `notDecoratedLink not-even:cursor-pointer py-2 rounded-xl sm:bg-gray-50 sm:px-2 sm:hover:border-b-3 sm:hover:border-b-gray-200
+          sm:shadow-md`
       }
       onClick={props.action}
       href={props.href}

@@ -11,7 +11,7 @@ export const Card = (props: Props) => {
   return (
     <div
       onClick={props.onClick}
-      className='p-4 shadow-md rounded-md cursor-pointer w-[200px] hover:shadow-lg'
+      className='flex flex-col content-center justify-center bg-gray-50 p-4 shadow-md rounded-md cursor-pointer w-[165px] hover:shadow-lg'
     >
       <p className='font-bold text-center'>
         {props.title}
