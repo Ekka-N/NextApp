@@ -1,5 +1,5 @@
 'use client'
-import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps"
+import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps"
 
 export const YandexMap = () => {
   return (
@@ -12,13 +12,13 @@ export const YandexMap = () => {
           }}
           className="w-full h-64 shadow-md max-w-[750px]"
         >
-            <Placemark
-              geometry={[48.300110, 40.149640]}
-              properties={{
-                iconCaption: 'ул. Придорожная дом 8'
-              }} 
-            />
-          </Map>
+          <Placemark
+            geometry={[48.300110, 40.149640]}
+            properties={{
+              iconCaption: 'ул. Придорожная дом 8'
+            }} 
+          />
+        </Map>
       </div>
     </YMaps>
   )

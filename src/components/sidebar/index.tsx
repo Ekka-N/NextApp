@@ -5,7 +5,7 @@ export const Sidebar = () => {
     <div className='bg-green-100 w-56  h-full py-7 px-5 rounded-3xl shadow-inner min-h-fit border-1 border-gray-400'>
       <h4 className='font-semibold text-2xl pb-4'>
         Контакты
-        </h4>
+      </h4>
 
       <p className='font-semibold text-lg pb-1'>Телефон:</p>
       <p className='pb-3'>+7 000-000-00-00</p>

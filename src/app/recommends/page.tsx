@@ -1,6 +1,7 @@
 'use client'
-import { Card } from '@/components';
 import React from 'react'
+
+import { Card } from '@/components';
 
 const RecommendsPage = () => {
   return (
