@@ -1,13 +1,13 @@
 'use client'
 
-import React, { ReactNode, useState } from 'react'
+import React, { ReactNode, useState, useEffect } from 'react'
 import Link from 'next/link'
 import './header.css'
 
 enum Nav {
-  MAIN,
-  RECS,
-  CATALOG
+  MAIN = '/',
+  RECS = '/recommends',
+  CATALOG ='/catalog'
 }
 
 type NavLinkProps = {
@@ -41,7 +41,18 @@ const NavLink = (props: NavLinkProps ) => {
 }
 
 export const Header = () => {
-  const [navState, setNavState] = useState<Nav>(Nav.MAIN)
+  const [navState, setNavState] = useState<Nav | null>(null)
+
+  useEffect(() => {
+    const path = window.location.pathname as Nav
+
+    if (Object.values(Nav).includes(path)) {
+      setNavState(path)
+    } else {
+      window.location.replace('/')
+      setNavState(Nav.MAIN)
+    }
+  }, [])
 
   const handleChangeNav = (nav: Nav) => {
     setNavState(nav)
@@ -58,23 +69,23 @@ export const Header = () => {
 
       <div className='flex items-center gap-4'>
         <NavLink
-          isSelected={navState === Nav.MAIN }
+          isSelected={navState === Nav.MAIN}
           action={() => handleChangeNav(Nav.MAIN)}
-          href='/'
+          href={Nav.MAIN}
         >
           О нас
         </NavLink>
         <NavLink
           isSelected={navState === Nav.CATALOG}
           action={() => handleChangeNav(Nav.CATALOG)}
-          href='/catalog'
+          href={Nav.CATALOG}
         >
           Каталог сортов
         </NavLink>
         <NavLink
           isSelected={navState === Nav.RECS}
           action={() => handleChangeNav(Nav.RECS)}
-          href='/recommends'
+          href={Nav.RECS}
         >
           Посадка и уход
         </NavLink>
