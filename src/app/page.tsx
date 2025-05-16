@@ -1,5 +1,6 @@
-import { YandexMap } from '@/components';
 import React from 'react'
+
+import { YandexMap } from '@/components';
 
 const MainPage = () => {
   return (
@@ -48,7 +49,7 @@ const MainPage = () => {
       <p>
         Если ехать со стороны Каменска-Шахтинского, то съезд на грунтовую дорогу влево
       </p>
-      <div className='mt-4 mb-2'>
+      <div className="mt-4 mb-2">
         <YandexMap />
       </div>
     </main>

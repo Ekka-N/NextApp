@@ -1,7 +1,9 @@
 'use client'
 
-import React, { ReactNode, useState, useEffect } from 'react'
+import React, { ReactNode, useEffect, useState } from 'react'
+import Image from "next/image"
 import Link from 'next/link'
+
 import './header.css'
 
 enum Nav {
@@ -23,7 +25,7 @@ const NavLink = (props: NavLinkProps ) => {
       className={
         props.isSelected ?
           'notDecoratedLink py-2 rounded-xl border-b-gray-200 sm:shadow-inner sm:bg-green-50 sm:px-2 sm:border-b-3'
-        : `notDecoratedLink not-even:cursor-pointer py-2 rounded-xl sm:bg-gray-50 sm:px-2 sm:hover:border-b-3 sm:hover:border-b-gray-200
+          : `notDecoratedLink not-even:cursor-pointer py-2 rounded-xl sm:bg-gray-50 sm:px-2 sm:hover:border-b-3 sm:hover:border-b-gray-200
           sm:shadow-md`
       }
       onClick={props.action}
@@ -32,7 +34,7 @@ const NavLink = (props: NavLinkProps ) => {
       <span className={
         props.isSelected ?
           'text-emerald-800 font-semibold underline sm:no-underline'
-        : `text-gray-800`
+          : `text-gray-800`
       }>
         {props.children}
       </span>
@@ -59,15 +61,15 @@ export const Header = () => {
   }
 
   return (
-    <header className='min-h-20 py-3 mb-4'>
-      <div className='flex items-center gap-6 mb-7'>
-        <h1 className='text-4xl text-green-950 font-bold'>
+    <header className="min-h-20 py-3 mb-4">
+      <div className="flex items-center gap-6 mb-7">
+        <h1 className="text-4xl text-green-950 font-bold">
           Саженцы из Поповки
         </h1>
-        <img alt="apple" src="img/apple.png" />
+        <Image alt="apple" src="/img/apple.png" width="56" height="56" />
       </div>
 
-      <div className='flex items-center gap-4'>
+      <div className="flex items-center gap-4">
         <NavLink
           isSelected={navState === Nav.MAIN}
           action={() => handleChangeNav(Nav.MAIN)}

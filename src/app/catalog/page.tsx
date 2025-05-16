@@ -6,7 +6,7 @@ const CatalogPage = () => {
   return (
     <div>
       CatalogPage 
-      <Image src='/img/apple.png' alt='icon' width='20' height='30' />
+      <Image src="/img/apple.png" alt="icon" width="20" height="30" />
     </div>
   )
 }

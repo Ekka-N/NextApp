@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --fix"
   },
   "dependencies": {
     "@pbe/react-yandex-maps": "^1.2.5",
@@ -22,6 +22,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9.21.0",
     "eslint-config-next": "15.2.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-tailwindcss": "^3.18.0",
     "tailwindcss": "^4",
     "typescript": "^5"

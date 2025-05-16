@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import { Montserrat } from "next/font/google"
+
 import { Header, Sidebar } from "@/components"
+
 import "./globals.css"
 
 const fontSans = Montserrat({
