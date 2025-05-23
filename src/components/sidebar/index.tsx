@@ -29,6 +29,6 @@ export const Sidebar = () => {
         1 км от дороги.
       </p>
     </div>
-  );
+  )
 }
 

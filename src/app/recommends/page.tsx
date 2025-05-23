@@ -1,7 +1,7 @@
-'use client'
-import React from 'react'
+"use client"
+import React from "react"
 
-import { Card } from '@/components';
+import { Card } from "@/components"
 
 const RecommendsPage = () => {
   return (
@@ -13,51 +13,51 @@ const RecommendsPage = () => {
         <Card
           title="Посадка смородины"
           imgSrc="/img/blackcurrant.png"
-          onClick={() => {console.log('Click on recommendation card')}}
+          onClick={() => {console.log("Click on recommendation card")}}
         />
         <Card
           title="Посадка клубники"
           imgSrc="/img/strawberry.png"
-          onClick={() => {console.log('Click on recommendation card')}}
+          onClick={() => {console.log("Click on recommendation card")}}
         />
         <Card
           title="Посадка саженцев"
           imgSrc="/img/seed.png"
-          onClick={() => {console.log('Click on recommendation card')}}
+          onClick={() => {console.log("Click on recommendation card")}}
         />
         <Card
           title="Посадка клематиса"
           imgSrc="/img/flower.png"
-          onClick={() => {console.log('Click on recommendation card')}}
+          onClick={() => {console.log("Click on recommendation card")}}
         />
         <Card
           title="Посадка малины"
           imgSrc="/img/raspberry.png"
-          onClick={() => {console.log('Click on recommendation card')}}
+          onClick={() => {console.log("Click on recommendation card")}}
         />
         <Card
           title="Посадка крыжовника"
           imgSrc="/img/gooseberry.png"
-          onClick={() => {console.log('Click on recommendation card')}}
+          onClick={() => {console.log("Click on recommendation card")}}
         />
         <Card
           title="Посадка винограда"
           imgSrc="/img/grapes.png"
-          onClick={() => {console.log('Click on recommendation card')}}
+          onClick={() => {console.log("Click on recommendation card")}}
         />
         <Card
           title="Посадка роз"
           imgSrc="/img/rose.png"
-          onClick={() => {console.log('Click on recommendation card')}}
+          onClick={() => {console.log("Click on recommendation card")}}
         />
         <Card
           title="Голубое опрыскивание"
           imgSrc="/img/sprayer.png"
-          onClick={() => {console.log('Click on recommendation card')}}
+          onClick={() => {console.log("Click on recommendation card")}}
         />
       </div>
     </div>
   )
 }
 
-export default RecommendsPage;
+export default RecommendsPage

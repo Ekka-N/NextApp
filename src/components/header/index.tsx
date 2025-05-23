@@ -1,15 +1,15 @@
-'use client'
+"use client"
 
-import React, { ReactNode, useEffect, useState } from 'react'
+import React, { ReactNode, useEffect, useState } from "react"
 import Image from "next/image"
-import Link from 'next/link'
+import Link from "next/link"
 
-import './header.css'
+import "./header.css"
 
 enum Nav {
-  MAIN = '/',
-  RECS = '/recommends',
-  CATALOG ='/catalog'
+  MAIN = "/",
+  RECS = "/recommends",
+  CATALOG ="/catalog"
 }
 
 type NavLinkProps = {
@@ -24,7 +24,7 @@ const NavLink = (props: NavLinkProps ) => {
     <Link
       className={
         props.isSelected ?
-          'notDecoratedLink py-2 rounded-xl border-b-gray-200 sm:shadow-inner sm:bg-green-50 sm:px-2 sm:border-b-3'
+          "notDecoratedLink py-2 rounded-xl border-b-gray-200 sm:shadow-inner sm:bg-green-50 sm:px-2 sm:border-b-3"
           : `notDecoratedLink not-even:cursor-pointer py-2 rounded-xl sm:bg-gray-50 sm:px-2 sm:hover:border-b-3 sm:hover:border-b-gray-200
           sm:shadow-md`
       }
@@ -33,8 +33,8 @@ const NavLink = (props: NavLinkProps ) => {
     >
       <span className={
         props.isSelected ?
-          'text-emerald-800 font-semibold underline sm:no-underline'
-          : `text-gray-800`
+          "text-emerald-800 font-semibold underline sm:no-underline"
+          : "text-gray-800"
       }>
         {props.children}
       </span>
@@ -51,7 +51,7 @@ export const Header = () => {
     if (Object.values(Nav).includes(path)) {
       setNavState(path)
     } else {
-      window.location.replace('/')
+      window.location.replace("/")
       setNavState(Nav.MAIN)
     }
   }, [])
@@ -93,5 +93,5 @@ export const Header = () => {
         </NavLink>
       </div>
     </header>
-  );
+  )
 }

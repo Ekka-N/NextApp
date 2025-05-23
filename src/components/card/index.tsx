@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import Image from "next/image"
 
 type Props = {
@@ -20,5 +20,5 @@ export const Card = (props: Props) => {
         <Image src={props.imgSrc} alt={props.title} width={60} height={60} />
       </div>
     </div>
-  );
-};
+  )
+}

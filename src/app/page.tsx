@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 
-import { YandexMap } from '@/components';
+import { YandexMap } from "@/components"
 
 const MainPage = () => {
   return (
@@ -56,4 +56,4 @@ const MainPage = () => {
   )
 }
 
-export default MainPage;
+export default MainPage

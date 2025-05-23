@@ -1,9 +1,9 @@
-'use client'
+"use client"
 import { Map, Placemark, YMaps } from "@pbe/react-yandex-maps"
 
 export const YandexMap = () => {
   return (
-    <YMaps query={{ lang:'ru_RU' }}>
+    <YMaps query={{ lang:"ru_RU" }}>
       <div>
         <Map
           defaultState={{
@@ -15,7 +15,7 @@ export const YandexMap = () => {
           <Placemark
             geometry={[48.300110, 40.149640]}
             properties={{
-              iconCaption: 'ул. Придорожная дом 8'
+              iconCaption: "ул. Придорожная дом 8"
             }} 
           />
         </Map>

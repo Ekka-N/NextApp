@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import Image from "next/image"
 
 
@@ -11,4 +11,4 @@ const CatalogPage = () => {
   )
 }
 
-export default CatalogPage;
+export default CatalogPage

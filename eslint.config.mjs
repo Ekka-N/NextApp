@@ -35,7 +35,8 @@ const eslintConfig = [
         }
       ],
       "indent": ["error", 2],
-       "jsx-quotes": ["error", "prefer-double"]
+      "quotes": ["error", "double"],
+      "semi": ["error", "never", { "beforeStatementContinuationChars": "always" }]
     },
   }),
 

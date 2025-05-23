@@ -8,12 +8,12 @@ import "./globals.css"
 const fontSans = Montserrat({
   variable: "--font-sans",
   subsets: ["latin"]
-});
+})
 
 export const metadata: Metadata = {
   title: "Саженцы из Поповки",
   description: "Продажа деревьев и цветов",
-};
+}
 
 export default function RootLayout({
   children,
@@ -38,5 +38,5 @@ export default function RootLayout({
         </footer>
       </body>
     </html>
-  );
+  )
 }
